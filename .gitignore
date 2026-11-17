@@ -1,0 +1,23 @@
+# data and artifacts stay out of Git
+data/raw/
+data/processed/
+artifacts/*
+!artifacts/metrics/
+mlruns/
+# environments and secrets
+.venv/
+venv/
+.env
+# python / notebooks
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+
+# web app
+frontend/node_modules/
+data/app/
+.env.*
+!.env.example
+frontend/*.tsbuildinfo

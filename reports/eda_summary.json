@@ -1,0 +1,47 @@
+{
+ "rows": 10000,
+ "failures": 339,
+ "failure_rate": 0.0339,
+ "type_counts": {
+  "L": 6000,
+  "M": 2997,
+  "H": 1003
+ },
+ "failure_rate_by_type": {
+  "L": 0.0392,
+  "M": 0.0277,
+  "H": 0.0209
+ },
+ "mode_counts": {
+  "TWF": 46,
+  "HDF": 115,
+  "PWF": 95,
+  "OSF": 98,
+  "RNF": 19
+ },
+ "failures_without_mode": 9,
+ "modes_without_failure": 18,
+ "multi_mode_rows": 24,
+ "rule_agreement": {
+  "HDF: temp diff < 8.6 K and speed < 1380 rpm": "100.0000%",
+  "PWF: power < 3500 W or > 9000 W": "100.0000%",
+  "OSF: wear x torque > 11k/12k/13k minNm (L/M/H)": "100.0000%"
+ },
+ "split": {
+  "train": {
+   "rows": 7000,
+   "failures": 237,
+   "failure rate": 0.0339
+  },
+  "validation": {
+   "rows": 1500,
+   "failures": 51,
+   "failure rate": 0.034
+  },
+  "test": {
+   "rows": 1500,
+   "failures": 51,
+   "failure rate": 0.034
+  }
+ }
+}

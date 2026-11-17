@@ -1,0 +1,22 @@
+# Milestone 01 (data layer, EDA, tests)
+numpy>=1.26
+pandas>=2.1
+scipy>=1.11
+scikit-learn>=1.4
+matplotlib>=3.8
+nbformat>=5.9
+nbclient>=0.10
+ipykernel>=6.29
+pytest>=8.0
+xgboost==3.4.1
+pygam==0.12.0
+shap==0.54.1
+imbalanced-learn==0.14.2
+# Web application (Milestone 6)
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+pymongo>=4.6
+httpx>=0.27
+joblib>=1.3
+# MARS: own implementation in ml/models/mars.py (py-earth does not build)

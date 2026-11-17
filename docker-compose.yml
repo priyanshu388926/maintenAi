@@ -1,0 +1,17 @@
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    volumes: [mongo-data:/data/db]
+  api:
+    build: .
+    depends_on: [mongo]
+    ports: ["8000:8000"]
+    environment:
+      MONGODB_URI: mongodb://mongo:27017
+      MONGODB_DB: maintenai
+    volumes:
+      - ./data/raw:/app/data/raw:ro
+      - ./artifacts:/app/artifacts
+volumes:
+  mongo-data:
